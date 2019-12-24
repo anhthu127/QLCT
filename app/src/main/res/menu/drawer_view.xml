@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main"
+    tools:context="">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="Home"
+
+                />
+            <item
+                android:id="@+id/nav_taovi"
+                android:icon="@drawable/ic_add_circle_outline_black_24dp"
+                android:title="Thêm giao dịch" />
+            <item
+                android:id="@+id/nav_thongke"
+                android:icon="@drawable/ic_timeline_black_24dp"
+                android:title="Thống kê" />
+
+        </group>
+<item android:title="" ></item>
+    <item android:title="Controls">
+
+
+    <menu>
+            <item
+                android:id="@+id/nav_caidat"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Cài đặt" />
+    </menu>
+
+    </item>
+
+</menu>

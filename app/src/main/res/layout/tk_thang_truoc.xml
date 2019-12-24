@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layout_thang_truoc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongKeTabsLayout.ThongKeThangTruoc">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="Chi tiêu:"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="9pt"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtChiTieu"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="20dp"
+            android:text=""
+            android:textColor="#f22"
+            android:textSize="9pt"
+            android:textStyle="normal"
+
+            ></TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/chart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"></RelativeLayout>
+</LinearLayout>

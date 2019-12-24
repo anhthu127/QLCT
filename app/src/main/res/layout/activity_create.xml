@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateGD">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:title="Tạo Giao Dịch"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/textView"
+        ></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/wallet_512" />
+
+        <TextView
+            android:id="@+id/txtVi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0.0"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="normal" />
+
+</LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <Spinner
+            android:id="@+id/spinnerloaigiaodich"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtloaigd" />
+
+        <TextView
+            android:id="@+id/txtloaigd"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/successColor"
+            android:gravity="center"
+            android:text="Loại giao dịch"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+        <RadioGroup
+            android:id="@+id/rdgParents"
+            android:layout_width="170dp"
+            android:layout_height="75dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="64dp"
+            android:layout_weight="0.75"
+            android:checkedButton="@id/rdChi"
+            android:gravity="center"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rdThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.25"
+                android:text="Khoản Thu"
+                android:textSize="7pt"
+                android:textStyle="bold"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.25"
+                android:text="Khoản Chi"
+                android:textSize="7pt"
+                android:textStyle="bold"
+
+                ></RadioButton>
+
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTenGiaoDich"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="Tên giao dịch"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtTenGd"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="tên giao dịch..."
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="7pt"
+
+            ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtMota"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="Chi tiết"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtMota"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="mô tả chi tiết..."
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="7pt"
+
+            ></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnchonngaythang"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/successColor"
+            android:gravity="center"
+            android:text="chọn"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="bold"></Button>
+
+        <TextView
+            android:id="@+id/labelngaythangnam"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="dd/mm/yy..."
+            android:inputType="date"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            app:counterEnabled="true"
+            app:hintEnabled="true"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtsotien"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="Số tiền"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtsotien"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="số tiền..."
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="7pt"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btntaogiaodich"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/success_button"
+            android:gravity="center"
+            android:text="Tạo Giao Dịch"></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txtBackGround">#009688</color>
+    <color name="textView">#009688</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="buttonColor">#42A5F5</color>
+    <color name="boderColor">#3B000000</color>
+    <color name="deleteColor">#EF5350</color>
+    <color name="successColor">#009688</color>
+</resources>

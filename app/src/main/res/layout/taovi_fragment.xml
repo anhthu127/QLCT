@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tao_vi_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragInMainActivity.TaoViFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/top_txt"
+        android:gravity="center"
+        android:text="Thêm tiền vào ví"
+        android:textSize="11pt"
+        android:textColor="#fff"
+        android:textStyle="bold"></TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/background"
+    android:layout_height="660dp"
+    android:orientation="vertical"
+    android:background="@drawable/img_vi"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wallet_512"></ImageView>
+
+        <TextView
+            android:id="@+id/txtSoDuVi"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="0.0 "
+            android:textColor="#000000"
+            android:textSize="9pt"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <!--        <EditText-->
+<!--            android:id="@+id/edtrutvi"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:hint="Rút khỏi ví..."-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="9pt"-->
+<!--            android:textStyle="normal"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/edtthemvaovi"-->
+<!--            app:layout_constraintStart_toStartOf="parent"></EditText>-->
+
+        <EditText
+            android:id="@+id/edtthemvaovi"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="60dp"
+            android:hint="Thêm vào ví..."
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="9pt"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></EditText>
+
+        <Button
+            android:id="@+id/btnCapNhat"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/success_button"
+            android:text="Cập Nhật"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <Button
+            android:id="@+id/btnchonngaythang"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/successColor"
+            android:gravity="center"
+            android:text="chọn"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            android:textStyle="bold"></Button>
+
+        <TextView
+            android:id="@+id/labelngaythangnam"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#B1FCFAFA"
+            android:textColorHint="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:hint="dd/mm/yy..."
+            android:inputType="date"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="7pt"
+            app:counterEnabled="true"
+            app:hintEnabled="true"></TextView>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
